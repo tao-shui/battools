@@ -1,3 +1,8 @@
+rem 替换格式(*.*)过滤文件
+rem 保留前三位：!fn:~0,3!
+rem 保留后三位：!fn:~-3!
+rem 去掉前三位：!fn:~3!
+rem 去掉后三位：!fn:~0,-3!
 @echo off
 @chcp 65001
 setlocal enabledelayedexpansion
