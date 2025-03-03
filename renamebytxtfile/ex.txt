@@ -1,0 +1,2 @@
+newname1	oldname1
+newname2	oldname2
