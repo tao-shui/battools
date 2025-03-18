@@ -1,19 +1,20 @@
 @echo off 1>nul
 chcp 936>nul 2>nul
-for /f "tokens=1,*", %%i in (ex.txt) do (
+echo pls pull the folder here
+echo 拉取需要处理的文件夹
+set /p a=
 
-if exist "%%j.jpg" (
-if not exist %%i.jpg (
-ren "%%j.jpg" "%%i.jpg"
+for /f "tokens=1,*", %%i in (ex.txt) do (
+echo %a%\%%i
+if exist "%a%\%%j.jpg" (
+if not exist "%a%\%%i.jpg" (
+ren "%a%\%%j.jpg" "%%i.jpg"
 ) else (
 echo %%i.jpg 图片已存在
 )
 ) else (
 echo %%j.jpg 图片不存在
 )
-
-
-
 )
 
 pause>nul
