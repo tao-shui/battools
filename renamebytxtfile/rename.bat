@@ -3,6 +3,7 @@ chcp 936>nul 2>nul
 echo ^>^>^>pls pull the folder here
 echo ^>^>^>拉取需要处理的文件夹
 set /p a=^>^>^>
+if ^%a:~0,1%==^" set a=%a:~1,-1%
 rem type ex.txt
 for /f "tokens=1,*", %%i in (ex.txt) do (
 if exist "%a%\%%j.jpg" (
