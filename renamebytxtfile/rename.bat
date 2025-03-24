@@ -7,7 +7,7 @@ echo ^>^>^>直接按回车将使用当前路径
 set /p a=^>^>^>
 if not defined a set a=%cd%
 if ^%a:~0,1%==^" set a=%a:~1,-1%
-echo %a%
+@REM echo %a%
 rem type ex.txt
 for /f "tokens=1,*", %%i in (ex.txt) do (
 if exist "%a%\%%j.jpg" (
