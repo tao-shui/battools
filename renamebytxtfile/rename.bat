@@ -1,5 +1,7 @@
 @echo off 1>nul
 chcp 936>nul 2>nul
+REM 使用绝对路径
+REM ex配置文件需要跟当前脚本放在一起
 echo ^>^>^>pls pull the folder here and press enter
 echo ^>^>^>or press enter directly to use current path
 echo ^>^>^>拉取需要处理的文件夹按回车启动
